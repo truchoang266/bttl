@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        body{
+            background:linear-gradient(red, orange);
+            min-height:100vh;
+        }
+
+        .box{
+            width: 400px;
+            height: 500px;
+            border-radius:10px;
+            background:white;
+            text-align:center;
+            margin: 160px auto;
+            padding: 100px;
+
+        }
+       .box p{
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+       }
+
+       input[type="text"]{
+            padding: 5px 10px;
+            margin-top: 10px;
+       }
+
+       .box a{
+            text-decoration:none;
+            margin-top: 15px;
+            display: block;
+            color: darkgray;
+       }
+       input[type="button"]{
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 30px;
+            background: red;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        input[type="button"]:hover{
+            background-color:orange;
+        }
+
+       .icon a{
+        display: inline-block;
+        border-radius:50px;
+        background-color:lightblue;
+        color: white;
+        Width: 30px;
+        height: 30px;
+        text-align:center;
+        line-height: 30px;
+        
+       }
+
+       .icon a:hover{
+        background:lightpink;
+        transition:0.5s;
+        transform:translateY(-9px);
+        box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p >Sign in</p>
+        <form>
+        <input type="text" name="username" placeholder="Enter your username"><BR>
+        <input type="text" name="password" placeholder="Enter your password"><BR>
+        <a href="#">Forgot your password?</a><br>
+        <input type="button" name="submit" value="Sign in"><br>
+        </form>
+        <div class="icon">
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-face-smile"></i></a>
+        </div>        
+    </div>   
+        
+</body>
+</html>
